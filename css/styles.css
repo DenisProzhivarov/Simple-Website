@@ -4781,16 +4781,16 @@ a {
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
     vertical-align: top; }
-    .form__button--search {
-      fill: white;
-      vertical-align: middle; }
     .form__button:hover, .form__button:focus, .form__button:active {
       color: #5474fd;
       background-color: #fff;
       border: 2px solid #5474fd;
       font-weight: 700; }
-      .form__button:hover .form__button--search, .form__button:focus .form__button--search, .form__button:active .form__button--search {
+      .form__button:hover .form__search, .form__button:focus .form__search, .form__button:active .form__search {
         fill: #5474fd; }
+  .form__search {
+    fill: white;
+    vertical-align: middle; }
   .form__span {
     display: inline-block;
     width: 60%;
@@ -4814,6 +4814,9 @@ a {
   height: 60px;
   color: #fff;
   font-size: 0; }
+  .menu__logo {
+    display: inline-block;
+    width: 15%; }
   .menu__items {
     width: 85%;
     font-size: 14px;
@@ -4861,7 +4864,7 @@ a {
   font-size: 24px;
   line-height: 60px;
   letter-spacing: .1em;
-  width: 15%;
+  width: 100%;
   -webkit-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out; }
@@ -4881,6 +4884,9 @@ a {
 .scroll {
   color: #fff;
   text-align: center; }
+  .scroll__box {
+    width: 150px;
+    margin: 0 auto; }
   .scroll__svg {
     fill: white;
     -webkit-transition: all .4s ease-in-out;

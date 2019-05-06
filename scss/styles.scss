@@ -131,10 +131,6 @@ a {
     cursor: pointer;
     transition: all .4s ease-in-out;
     vertical-align: top;
-    &--search {
-      fill: white;
-      vertical-align: middle;
-    }
     &:hover,
     &:focus,
     &:active {
@@ -143,15 +139,21 @@ a {
       border: 2px solid #5474fd;
       font-weight: 700;
 
-      .form__button--search {
+      .form__search {
         fill: #5474fd;
       }
       
     }
   }
+  &__search {
+    fill: white;
+    vertical-align: middle;
+  }
   &__span {
     display: inline-block;
     width: 60%;
+    // line-height: 14px;
+
     vertical-align: middle;
     // outline: 1px solid red;
     white-space: nowrap; /* Запрещаем перенос строк */
@@ -173,6 +175,11 @@ a {
   color: #fff;
   font-size: 0;
   // outline: 2px solid green;
+  &__logo {
+    display: inline-block;
+    // outline: 1px solid red;
+    width:15%;
+  }
   &__items {
     width: 85%;
     font-size: 14px;
@@ -228,7 +235,7 @@ a {
   line-height: 60px;
   // line-height: 26px;
   letter-spacing: .1em;
-  width: 15%;
+  width: 100%;
   // outline: 1px solid red;
   transition: all .4s ease-in-out;
   // display: inline;
@@ -253,6 +260,11 @@ a {
   color: #fff;
   text-align: center;
   // transition: all .4s ease-in-out;
+  &__box {
+    // outline: 1px solid red;
+    width:150px;
+    margin: 0 auto;
+  }
   &__svg {
     fill: white;
     transition: all .4s ease-in-out;
