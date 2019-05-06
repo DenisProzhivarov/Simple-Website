@@ -168,10 +168,11 @@ a {
   padding: 0;
   background-color: #5474fd;
   width: 100%;
+  padding: 0 5%;
   height: 60px;
   color: #fff;
   font-size: 0;
-  // outline: 1px solid green;
+  // outline: 2px solid green;
   &__items {
     width: 85%;
     font-size: 14px;
@@ -277,7 +278,7 @@ a {
     transform: scale(1.2);
     color: black;
     // color: red;
-    // font-weight: 700;
+    font-weight: 700;
     }
     .scroll__svg{
       transform: scale(1.2);

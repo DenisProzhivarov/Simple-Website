@@ -4810,6 +4810,7 @@ a {
   padding: 0;
   background-color: #5474fd;
   width: 100%;
+  padding: 0 5%;
   height: 60px;
   color: #fff;
   font-size: 0; }
@@ -4906,7 +4907,8 @@ a {
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
     transform: scale(1.2);
-    color: black; }
+    color: black;
+    font-weight: 700; }
   .scroll:hover .scroll__svg, .scroll:active .scroll__svg, .scroll:focus .scroll__svg {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
