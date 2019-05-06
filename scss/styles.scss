@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
 
 @font-face {
-  font-family: "Aleo Bold";
-  src: url("../fonts/aleo-bold.woff2") format('woff2'),
-     url("../fonts/aleo-bold.woff")  format('woff');
-  font-weight: bold;
-  font-style: normal;
+    font-family: "Aleo Bold";
+    src: url("../fonts/aleo-bold.woff2") format('woff2'),
+         url("../fonts/aleo-bold.woff")  format('woff');
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
@@ -15,301 +15,276 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @import 'normalize';
 @import "../scss/fontawesome.scss";
 @import "../scss/solid.scss";
 @import "../scss/brands.scss";
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 10px;
-  height: 100%;
+    font-size: 10px;
+    height: 100%;
 }
 
 body {
-  border: 15px solid #fff;
-  font-family: 'Josefin Sans', 'Aleo Regular', "Aleo Bold", sans-serif;
-  font-size: 1.8rem;
-  line-height: 1.6;
-  color: #fff;
-  min-height: 100%;
+    border: 15px solid #fff;
+    font-family: 'Josefin Sans', 'Aleo Regular', "Aleo Bold", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #fff;
+    min-height: 100%;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 .container {
-  max-width: 1172px;
-  width: 90%;
-  // outline: 1px solid red;
-  margin: 0 auto;
+    max-width: 1172px;
+    width: 90%;
+    // outline: 1px solid red;
+    margin: 0 auto;
 }
 
 .header {
-  position: relative;
-  background-color: #cccccc;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-image: linear-gradient(to top, rgba(12,12,12,0.2), rgba(12,12,12,0.2)), url(../img/h.png);
-  height: calc(100vh - 15px);
-  text-align: center;
-  &__h1 {
-    margin: 0;
-    font-size: 48px;
-    padding: 100px 10px  0 10px;
-    font-family: 'Josefin Sans', sans-serif;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-weight: 700;
-    white-space: nowrap; /* Запрещаем перенос строк */
-    overflow: hidden; /* Обрезаем все, что не помещается в область */
-    text-overflow: ellipsis; /* Добавляем многоточие */
-  }
-  &__h2 {
-    font-size: 21px;
-    margin: 0;
-    font-weight: 400;
-    letter-spacing: .31em;
-    margin-bottom: 40px;
-    padding: 0 10px;
-    white-space: nowrap; /* Запрещаем перенос строк */
-    overflow: hidden; /* Обрезаем все, что не помещается в область */
-    text-overflow: ellipsis; /* Добавляем многоточие */
-
-  }
+    position: relative;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: linear-gradient(to top, rgba(12,12,12,0.2), rgba(12,12,12,0.2)), url(../img/h.png);
+    height: calc(100vh - 15px);
+    text-align: center;
+    &__h1 {
+        margin: 0;
+        font-size: 48px;
+        padding: 100px 10px  0 10px;
+        font-family: 'Josefin Sans', sans-serif;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-weight: 700;
+        white-space: nowrap; /* Запрещаем перенос строк */
+        overflow: hidden; /* Обрезаем все, что не помещается в область */
+        text-overflow: ellipsis; /* Добавляем многоточие */
+    }
+    &__h2 {
+        font-size: 21px;
+        margin: 0;
+        font-weight: 400;
+        letter-spacing: .31em;
+        margin-bottom: 40px;
+        padding: 0 10px;
+        white-space: nowrap; /* Запрещаем перенос строк */
+        overflow: hidden; /* Обрезаем все, что не помещается в область */
+        text-overflow: ellipsis; /* Добавляем многоточие */
+    }
 }
 
 
 .form {
-  width:655px;
-  // box-sizing: border-box;
-  // width: 40%;
-  // outline: 1px solid red;
-  margin: 0 auto;
-  display: inline-block;
-  font-size: 0;
-  padding-bottom: 80px;
-  vertical-align: top;
-  // border: 2px solid #fff;
-  &__input {
-    // padding: 13px;
-    text-align: center;
-    width:500px;
-    // width: 80%;
-    font-size: 14px;
-    line-height: 26px;
-    letter-spacing: 0.2em;
-    border: 2px solid #fff;
-    color: #999999;
-    height: 56px;
-    white-space: nowrap; /* Запрещаем перенос строк */
-    overflow: hidden; /* Обрезаем все, что не помещается в область */
-    text-overflow: ellipsis; /* Добавляем многоточие */
-    &:focus::-webkit-input-placeholder { 
-      color:transparent; 
-    }
-  }
-  &__button {
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    padding: 13px;
-    width:155px;
-    height: 56px;
-    // width: 20%;
-    font-size: 14px;
-    line-height: 26px;
-    border: 2px solid #fff;
-    // border: none;
-    color: #fff;
-    background-color: #5474fd;
-    cursor: pointer;
-    transition: all .4s ease-in-out;
-    vertical-align: top;
-    &:hover,
-    &:focus,
-    &:active {
-      color: #5474fd;
-      background-color: #fff;
-      border: 2px solid #5474fd;
-      font-weight: 700;
-
-      .form__search {
-        fill: #5474fd;
-      }
-      
-    }
-  }
-  &__search {
-    fill: white;
-    vertical-align: middle;
-  }
-  &__span {
+    width:655px;
+    margin: 0 auto;
     display: inline-block;
-    width: 60%;
-    // line-height: 14px;
+    font-size: 0;
+    padding-bottom: 80px;
+    vertical-align: top;
+    // border: 2px solid #fff;
+    &__input {
+        text-align: center;
+        width:500px;
+        // width: 80%;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 0.2em;
+        border: 2px solid #fff;
+        color: #999999;
+        height: 56px;
+        white-space: nowrap; /* Запрещаем перенос строк */
+        overflow: hidden; /* Обрезаем все, что не помещается в область */
+        text-overflow: ellipsis; /* Добавляем многоточие */
+        &:focus::-webkit-input-placeholder { 
+            color:transparent; 
+        }
+    }
+    &__button {
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        padding: 13px;
+        width:155px;
+        height: 56px;
+        // width: 20%;
+        font-size: 14px;
+        line-height: 26px;
+        border: 2px solid #fff;
+        color: #fff;
+        background-color: #5474fd;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+        vertical-align: top;
+        &:hover,
+        &:focus,
+        &:active {
+            color: #5474fd;
+            background-color: #fff;
+            border: 2px solid #5474fd;
+            font-weight: 700;
 
-    vertical-align: middle;
-    // outline: 1px solid red;
-    white-space: nowrap; /* Запрещаем перенос строк */
-    overflow: hidden; /* Обрезаем все, что не помещается в область */
-    text-overflow: ellipsis; /* Добавляем многоточие */
-  }
-
+            .form__search {
+                fill: #5474fd;
+            }
+        }
+    }
+    &__search {
+        fill: white;
+        vertical-align: middle;
+    }
+    &__span {
+        display: inline-block;
+        width: 60%;
+        vertical-align: middle;
+        // outline: 1px solid red;
+        white-space: nowrap; /* Запрещаем перенос строк */
+        overflow: hidden; /* Обрезаем все, что не помещается в область */
+        text-overflow: ellipsis; /* Добавляем многоточие */
+    }
 }
 
 .menu {
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  padding: 0;
-  background-color: #5474fd;
-  width: 100%;
-  padding: 0 5%;
-  height: 60px;
-  color: #fff;
-  font-size: 0;
-  // outline: 2px solid green;
-  &__logo {
-    display: inline-block;
-    // outline: 1px solid red;
-    width:15%;
-  }
-  &__main {
-    display: inline-block;
-    width: 85%;
-  }
-  &__items {
-    width: 100%;
-    font-size: 14px;
-    line-height: 26px;
+    position: absolute;
+    bottom: 0;
     margin: 0;
     padding: 0;
-    // outline: 1px solid red;
-    text-transform: uppercase;
-    font-family:'Aleo Regular', sans-serif;
-    display: inline-block;
-    text-align: right;
-    vertical-align: middle;
-  }
-  &__item {
-    display: inline-block;
-    // outline: 1px solid red;
-    text-align: left;
-    margin-right: 5%;
-    // width:25%;
-    min-width:100px;
-    // width:15%;
-    white-space: nowrap; /* Запрещаем перенос строк */
-    overflow: hidden; /* Обрезаем все, что не помещается в область */
-    text-overflow: ellipsis; /* Добавляем многоточие */
-    transition: all .4s ease-in-out;
-    &:last-child {
-      margin: 0;
-      text-align: left;
+    background-color: #5474fd;
+    width: 100%;
+    padding: 0 5%;
+    height: 60px;
+    color: #fff;
+    font-size: 0;
+    // outline: 2px solid green;
+    &__logo {
+        display: inline-block;
+        // outline: 1px solid red;
+        width:20%;
     }
-    &:hover,
-    &:focus,
-    &:active {
-      // border-bottom: 2px solid #fff;
-      transform: scale(1.2);
-      color: black;
-      font-weight: 700;
+    &__main {
+        display: inline-block;
+        width: 80%;
     }
-
-  }
-    
+    &__items {
+        width: 100%;
+        font-size: 14px;
+        line-height: 26px;
+        margin: 0;
+        padding: 0;
+        // outline: 1px solid red;
+        text-transform: uppercase;
+        font-family:'Aleo Regular', sans-serif;
+        display: inline-block;
+        text-align: right;
+        vertical-align: middle;
+    }
+    &__item {
+        display: inline-block;
+        // outline: 1px solid red;
+        text-align: left;
+        margin-right: 5%;
+        min-width:100px;
+        white-space: nowrap; /* Запрещаем перенос строк */
+        overflow: hidden; /* Обрезаем все, что не помещается в область */
+        text-overflow: ellipsis; /* Добавляем многоточие */
+        transition: all .4s ease-in-out;
+        &:last-child {
+            margin: 0;
+            text-align: left;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            transform: scale(1.0);
+            color: black;
+            font-weight: 700;
+        }
+    } 
 }
 
 .logo {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0;
-  // margin: 19px 0;
-  // margin: 14px 0;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 60px;
-  // line-height: 26px;
-  letter-spacing: .1em;
-  width: 100%;
-  // outline: 1px solid red;
-  transition: all .4s ease-in-out;
-  // display: inline;
-  // white-space: nowrap; /* Запрещаем перенос строк */
-  // overflow: hidden; /* Обрезаем все, что не помещается в область */
-  // text-overflow: ellipsis; /* Добавляем многоточие */
-  &--bottom {
-    padding: 0;
-    line-height: 40px;
-    padding-top: 110px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 60px;
+    letter-spacing: .1em;
     width: 100%;
+    // outline: 1px solid red;
+    transition: all .4s ease-in-out;
+    // white-space: nowrap; /* Запрещаем перенос строк */
+    // overflow: hidden; /* Обрезаем все, что не помещается в область */
+    // text-overflow: ellipsis; /* Добавляем многоточие */
+    &--bottom {
+        padding: 0;
+        line-height: 40px;
+        padding-top: 110px;
+        width: 100%;
     }
     &:hover,
     &:focus,
     &:active {
+        width: 100%;
         transform: scale(1.1);
-      color: black;
-      font-weight: 700;
-  }
+        color: black;
+        font-weight: 700;
+    }
 }
+
 .scroll {
-  color: #fff;
-  text-align: center;
+    color: #fff;
+    text-align: center;
     // outline: 1px solid yellow;
     width: 110px;
     height: 70px;
     display: block;
     text-align: center;
     margin: 0 auto;
-  // transition: all .4s ease-in-out;
   &__svg {
-    fill: white;
-    transition: all .4s ease-in-out;
+        fill: white;
+        transition: all .4s ease-in-out;
   }
   &__p {
-    transition: all .4s ease-in-out;
-    margin-bottom: 0;
-    line-height: 1;
-      width:110px;
-    font-weight: 400;
-    // padding:0 10px;
-    // width: 655px;
-    text-align: center;
-    white-space: nowrap; /* Запрещаем перенос строк */
-    overflow: hidden; /* Обрезаем все, что не помещается в область */
-    text-overflow: ellipsis; /* Добавляем многоточие */
-     // outline: 1px solid black;
-    display: inline-block;
-
-  }
-  &:hover,
-  &:active,
-  &:focus {
-
-    .scroll__p {
-    transform: scale(1.2);
-    color: black;
-   
-    // color: red;
-    font-weight: 700;
+        transition: all .4s ease-in-out;
+        margin-bottom: 0;
+        line-height: 1;
+        width:110px;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap; /* Запрещаем перенос строк */
+        overflow: hidden; /* Обрезаем все, что не помещается в область */
+        text-overflow: ellipsis; /* Добавляем многоточие */
+         // outline: 1px solid black;
+        display: inline-block;
     }
-    .scroll__svg{
-      transform: scale(1.2);
-      fill: black;
-      // fill: red;
-      // font-weight: 700;
+    &:hover,
+    &:active,
+    &:focus {
+
+        .scroll__p {
+            transform: scale(1.2);
+            color: black;
+            font-weight: 700;
+        }
+        .scroll__svg{
+            transform: scale(1.2);
+            fill: black;
+        }
     }
-  }
 }
-
 
 .section1 {
   background-color: #cccccc;
@@ -318,20 +293,18 @@ a {
   background-position: 50% 50%;
   background-image: linear-gradient(to top, rgba(66,66,66,.8), rgba(66,66,66,.8)), url(../img/s1.png);
   // height: calc(100vh - 15px);
-  // text-align: center;
   &__info {
     padding: 190px 0 115px;
     // outline: 1px solid red;
     display: inline-block;
     vertical-align: top;
-    // max-width:480px;
     width: 52%;
-    // margin-right: 5%;
     color: #fff;
   }
   &__title {
     font-size: 36px;
     line-height: 26px;
+    font-weight: 400;
     font-family:'Aleo Regular', sans-serif;
   }
   &__text {
@@ -363,16 +336,11 @@ a {
     // outline: 1px solid red;
     width:60%;
     height: 49%;
-    // display: block;
-    // text-align: left;
-  
-    // padding-bottom: 2%;
     &--right {
       padding: 0;
       position: absolute;
       right: 0;
       bottom: 0;
-      // display: inline-block;
       text-align: center;
     }
     &--left {
@@ -385,139 +353,118 @@ a {
 }
 
 .section3 {
-    // background-color: green;
-  background-color: #333333;
-  height: 335px;
-  width: 100%;
-   position: relative;
-  &__items {
-    // background-image: url(../img/shape.png), width:100%;
-    // background-repeat: no-repeat;
-    // // background-size: cover;
-    // background-position: 50% 10%; 
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  // align-content: stretch;
-  }
-
-  &__item {
-    font-family:'Aleo Regular', sans-serif;
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-    
-  height: 335px;
-  // outline: 1px solid;
-  vertical-align: middle;
-    // height: 100%;
-    width:33%;
-    // outline: 2px solid yellow;
-    font-size: 36px;
-    line-height: 26px;
-    color: #e8e8e8;
-    text-transform: capitalize;
-    // position: relative;
-        z-index: 3;
-  }
-  &__shape {
-    position: absolute;
-    z-index: 1;
-    color: black;
-    width: 58%;
-    height: 21%;
-    max-height: 82px;
-    max-width: 770px;
-    // max-height: 80px
-    left: 20.5%;
-    top:18%;
-  }
-  &__circle {
-    position: absolute;
-    left: 16.5%;
-    top: 28%;
-    z-index: 1;
-    border-radius: 50%;
     background-color: #333333;
-    // border: 1px solid red;
-    width:7%;
-    height: 28%;
-    // width:90px;
-    // width:100%;
-    // height: 90px;
-    &--middle {
-        left: 46.5%;
+    height: 335px;
+    width: 100%;
+    position: relative;
+    &__items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
     }
-    &--right {
-         left: 76.5%;
+
+    &__item {
+        font-family:'Aleo Regular', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 335px;
+        vertical-align: middle;
+        width:33%;
+        // outline: 2px solid yellow;
+        font-size: 36px;
+        line-height: 26px;
+        color: #e8e8e8;
+        text-transform: capitalize;
+        z-index: 3;
     }
-  }
-  &__search {
-
-    // outline: 1px solid red;
-    fill: #5474fd;
-  }
-  &__check {
-    // outline: 1px solid red;
-    fill: #ff6363;
-  }
-  &__like {
-    // outline: 1px solid red;
-    fill: #127bb7;
-  }
-  &__p {
-
-    margin: 0;
-    margin-top: 30px;
-    // outline: 1px solid red;
-  }
+    &__shape {
+        position: absolute;
+        z-index: 1;
+        color: black;
+        width: 58%;
+        height: 21%;
+        max-height: 82px;
+        max-width: 770px;
+        left: 20.5%;
+        top:18%;
+    }
+    &__circle {
+        position: absolute;
+        left: 16.5%;
+        top: 28%;
+        z-index: 1;
+        border-radius: 50%;
+        background-color: #333333;
+        // border: 1px solid red;
+        width:7%;
+        height: 28%;
+        &--middle {
+            left: 46.5%;
+        }
+        &--right {
+             left: 76.5%;
+        }
+    }
+    &__search {
+        // outline: 1px solid red;
+        fill: #5474fd;
+    }
+    &__check {
+        // outline: 1px solid red;
+        fill: #ff6363;
+    }
+    &__like {
+        // outline: 1px solid red;
+        fill: #127bb7;
+    }
+    &__p {
+        margin: 0;
+        margin-top: 30px;
+        // outline: 1px solid red;
+    }
 }
 
 .section4 {
-  background-color: rgb(204, 204, 204);
-  background-image: url(../img/sec4.png);
-  background-size: cover;
-  background-position: 50% 50%;
-  padding: 230px 0 100px 0;
-  &__right {
-    
-    background-image: url(../img/sec3.png);
-  }
-
-  &__item {
-    background-color: rgba(35, 35, 35, 0.902);
-    padding:50px 30px 50px 30px;
-    height: 375px;
-    width: 540px;
-    margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2.0rem;
-    line-height: 2.6rem;
-    &--right {
-      margin: 0 0 0 auto;
+    background-color: rgb(204, 204, 204);
+    background-image: url(../img/sec4.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 230px 0 100px 0;
+    &__right {
+        background-image: url(../img/sec3.png);
     }
-
-
-  }
-  &__country {
-  }
-  &__hotel {
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    font-weight: 400;
-  }
-  &__info {
-    font-size: 1.6rem;
-    margin-bottom: 40px;
-  }
-  &__button {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    font-family:'Aleo Regular', sans-serif;
-  }
+    &__item {
+        background-color: rgba(35, 35, 35, 0.902);
+        padding:50px 30px 50px 30px;
+        height: 375px;
+        width: 540px;
+        margin: 0;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2.0rem;
+        line-height: 2.6rem;
+        &--right {
+            margin: 0 0 0 auto;
+        }
+    }
+    &__country {}
+    &__hotel {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    &__info {
+        font-size: 1.6rem;
+        margin-bottom: 40px;
+    }
+    &__button {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-family:'Aleo Regular', sans-serif;
+    }
 }
 
 .button {
@@ -530,95 +477,84 @@ a {
     color: #fff;
     text-align: center;
     text-transform: uppercase;
-    // margin: 0 auto;
     display: block;
     border: none;
     border: 2px solid transparent;
     transition: background .6s linear;
     background: linear-gradient(45deg, #496bfe 40%, #5474fd 40%, #5474fd 100%);
-    // linear-gradient(to right, mediumorchid 50%, orchid 50%)
     &:hover,
     &:focus,
     &:active {
-      color: #496bfe;
-      background: #fff;
-      font-weight: 700;
-      border: 2px solid #496bfe;
+        color: #496bfe;
+        background: #fff;
+        font-weight: 700;
+        border: 2px solid #496bfe;
     }
-  }
+}
 
   
 .section6 {
-  background-color: rgb(35, 35, 35);
-  background-image: linear-gradient(to top, rgba(35, 35, 35, .8), rgba(35, 35, 35,.8)), url(../img/sec6.png);
-  background-size: cover;
-
-  // background-position: 50% 50%;
-  padding:110px 0 200px 0;  
-  &__items {
-    // width: 1110px;
-    // height: 290px;
-    margin: 0 auto;
-    // outline: 1px solid red;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    flex-grow: 1 2;
-    color: #e8e8e8;
-
-
-  }
-  &__item {
-    &:last-child {
-      background-color: #333333;
-      padding: 40px;
-      // outline: 1px solid red;
+    background-color: rgb(35, 35, 35);
+    background-image: linear-gradient(to top, rgba(35, 35, 35, .8), rgba(35, 35, 35,.8)), url(../img/sec6.png);
+    background-size: cover;
+    padding:110px 0 200px 0;  
+    &__items {
+        margin: 0 auto;
+        // outline: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex-grow: 1 2;
+        color: #e8e8e8;
     }
-  }
-  &__img {
-    // outline: 1px solid red;
-    height: 100%;
-    width: 450px;
-  }
-  &__title {
-    margin: 0;
-    margin-bottom: 90px;
-    text-align: center;
-    font-size: 36px;
-    line-height: 26px;
-     font-family: 'Aleo Regular';
-     font-weight: 400;
-  }
-
-  &__name {
-    color: #fefefe;
-    font-size: 20px;
-    line-height: 26px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-  &__text {
-    // font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 400;
-    color: #e8e8e8;
-    margin: 0;
-    // outline: 1px solid red;
-    &:before {
-      color: #5474fd;
-      display: inline-block;
-      content: "\f10d";
-      font-family: "Font Awesome 5 Free";
-      font-size: 20px;
-      line-height: 50px;
-      vertical-align: bottom;
-      // outline: 1px solid red;
-      padding-right: 10px;
-      // line-height: 1px;   
+    &__item {
+        &:last-child {
+            background-color: #333333;
+            padding: 40px;
+            // outline: 1px solid red;
+        }
     }
-  }
+    &__img {
+        // outline: 1px solid red;
+        height: 100%;
+        width: 450px;
+    }
+    &__title {
+        margin: 0;
+        margin-bottom: 90px;
+        text-align: center;
+        font-size: 36px;
+        line-height: 26px;
+        font-family: 'Aleo Regular';
+        font-weight: 400;
+    }
+    &__name {
+        color: #fefefe;
+        font-size: 20px;
+        line-height: 26px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #e8e8e8;
+        margin: 0;
+        // outline: 1px solid red;
+        &:before {
+            color: #5474fd;
+            display: inline-block;
+            content: "\f10d";
+            font-family: "Font Awesome 5 Free";
+            font-size: 20px;
+            line-height: 50px;
+            vertical-align: bottom;
+            // outline: 1px solid red;
+            padding-right: 10px;
+        }
+    }
 }
 
 .footer {
@@ -637,7 +573,6 @@ a {
     }
 
 }
-
 
 .socials {
         display: inline-block;

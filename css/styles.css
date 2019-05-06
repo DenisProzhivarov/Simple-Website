@@ -4816,10 +4816,10 @@ a {
   font-size: 0; }
   .menu__logo {
     display: inline-block;
-    width: 15%; }
+    width: 20%; }
   .menu__main {
     display: inline-block;
-    width: 85%; }
+    width: 80%; }
   .menu__items {
     width: 100%;
     font-size: 14px;
@@ -4850,10 +4850,10 @@ a {
       margin: 0;
       text-align: left; }
     .menu__item:hover, .menu__item:focus, .menu__item:active {
-      -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      -o-transform: scale(1.2);
-      transform: scale(1.2);
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
       color: black;
       font-weight: 700; }
 
@@ -4877,6 +4877,7 @@ a {
     padding-top: 110px;
     width: 100%; }
   .logo:hover, .logo:focus, .logo:active {
+    width: 100%;
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
@@ -4945,6 +4946,7 @@ a {
   .section1__title {
     font-size: 36px;
     line-height: 26px;
+    font-weight: 400;
     font-family: 'Aleo Regular', sans-serif; }
   .section1__text {
     font-size: 16px;
