@@ -4817,8 +4817,11 @@ a {
   .menu__logo {
     display: inline-block;
     width: 15%; }
+  .menu__main {
+    display: inline-block;
+    width: 85%; }
   .menu__items {
-    width: 85%;
+    width: 100%;
     font-size: 14px;
     line-height: 26px;
     margin: 0;
@@ -4883,10 +4886,12 @@ a {
 
 .scroll {
   color: #fff;
-  text-align: center; }
-  .scroll__box {
-    width: 150px;
-    margin: 0 auto; }
+  text-align: center;
+  width: 110px;
+  height: 70px;
+  display: block;
+  text-align: center;
+  margin: 0 auto; }
   .scroll__svg {
     fill: white;
     -webkit-transition: all .4s ease-in-out;
@@ -4898,8 +4903,8 @@ a {
     transition: all .4s ease-in-out;
     margin-bottom: 0;
     line-height: 1;
+    width: 110px;
     font-weight: 400;
-    padding: 0 10px;
     text-align: center;
     white-space: nowrap;
     /* Запрещаем перенос строк */
@@ -4907,7 +4912,8 @@ a {
     /* Обрезаем все, что не помещается в область */
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
-    /* Добавляем многоточие */ }
+    /* Добавляем многоточие */
+    display: inline-block; }
   .scroll:hover .scroll__p, .scroll:active .scroll__p, .scroll:focus .scroll__p {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -5095,9 +5101,9 @@ a {
   display: block;
   border: none;
   border: 2px solid transparent;
-  -webkit-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: background .6s linear;
+  -o-transition: background .6s linear;
+  transition: background .6s linear;
   background: -o-linear-gradient(45deg, #496bfe 40%, #5474fd 40%, #5474fd 100%);
   background: linear-gradient(45deg, #496bfe 40%, #5474fd 40%, #5474fd 100%); }
   .button:hover, .button:focus, .button:active {
