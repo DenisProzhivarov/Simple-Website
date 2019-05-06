@@ -4745,9 +4745,9 @@ a {
   margin: 0 auto;
   display: inline-block;
   font-size: 0;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  vertical-align: top; }
   .form__input {
-    padding: 13px;
     text-align: center;
     width: 500px;
     font-size: 14px;
@@ -4779,7 +4779,8 @@ a {
     cursor: pointer;
     -webkit-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out; }
+    transition: all .4s ease-in-out;
+    vertical-align: top; }
     .form__button--search {
       fill: white;
       vertical-align: middle; }
@@ -4905,8 +4906,7 @@ a {
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
     transform: scale(1.2);
-    color: black;
-    font-weight: 700; }
+    color: black; }
   .scroll:hover .scroll__svg, .scroll:active .scroll__svg, .scroll:focus .scroll__svg {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);

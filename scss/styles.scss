@@ -95,9 +95,10 @@ a {
   display: inline-block;
   font-size: 0;
   padding-bottom: 80px;
+  vertical-align: top;
   // border: 2px solid #fff;
   &__input {
-    padding: 13px;
+    // padding: 13px;
     text-align: center;
     width:500px;
     // width: 80%;
@@ -124,11 +125,12 @@ a {
     font-size: 14px;
     line-height: 26px;
     border: 2px solid #fff;
+    // border: none;
     color: #fff;
     background-color: #5474fd;
     cursor: pointer;
     transition: all .4s ease-in-out;
-    
+    vertical-align: top;
     &--search {
       fill: white;
       vertical-align: middle;
@@ -275,7 +277,7 @@ a {
     transform: scale(1.2);
     color: black;
     // color: red;
-    font-weight: 700;
+    // font-weight: 700;
     }
     .scroll__svg{
       transform: scale(1.2);
