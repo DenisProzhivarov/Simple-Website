@@ -4813,29 +4813,48 @@ a {
   padding: 0 5%;
   height: 60px;
   color: #fff;
-  font-size: 0; }
-  .menu__logo {
-    display: inline-block;
-    width: 20%; }
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
   .menu__main {
-    display: inline-block;
     width: 80%; }
   .menu__items {
-    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    height: 100%;
     font-size: 14px;
     line-height: 26px;
-    margin: 0;
-    padding: 0;
     text-transform: uppercase;
-    font-family: 'Aleo Regular', sans-serif;
-    display: inline-block;
-    text-align: right;
-    vertical-align: middle; }
+    font-family: 'Aleo Regular', sans-serif; }
   .menu__item {
-    display: inline-block;
-    text-align: left;
+    list-style-type: none;
+    line-height: 60px;
+    height: 60px;
+    min-width: 90px;
+    max-width: 120px;
     margin-right: 5%;
-    min-width: 100px;
     white-space: nowrap;
     /* Запрещаем перенос строк */
     overflow: hidden;
@@ -4847,13 +4866,12 @@ a {
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out; }
     .menu__item:last-child {
-      margin: 0;
-      text-align: left; }
+      margin: 0; }
     .menu__item:hover, .menu__item:focus, .menu__item:active {
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      -o-transform: scale(1);
-      transform: scale(1);
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);
       color: black;
       font-weight: 700; }
 

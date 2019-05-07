@@ -165,47 +165,50 @@ a {
     height: 60px;
     color: #fff;
     font-size: 0;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    // align-items: strech;
     // outline: 2px solid green;
-    &__logo {
-        display: inline-block;
-        // outline: 1px solid red;
-        width:20%;
-    }
     &__main {
-        display: inline-block;
         width: 80%;
+        // outline: 1px solid red;
     }
     &__items {
-        width: 100%;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        padding: 0;
+        margin: 0;
+        height: 100%;
         font-size: 14px;
         line-height: 26px;
-        margin: 0;
-        padding: 0;
-        // outline: 1px solid red;
+        // // outline: 1px solid red;
         text-transform: uppercase;
         font-family:'Aleo Regular', sans-serif;
-        display: inline-block;
-        text-align: right;
-        vertical-align: middle;
     }
+
     &__item {
-        display: inline-block;
-        // outline: 1px solid red;
-        text-align: left;
+        list-style-type: none;
+        line-height: 60px;
+        height: 60px;
+        min-width: 90px;
+        max-width:120px;
         margin-right: 5%;
-        min-width:100px;
+        // outline: 1px solid red;
         white-space: nowrap; /* Запрещаем перенос строк */
         overflow: hidden; /* Обрезаем все, что не помещается в область */
         text-overflow: ellipsis; /* Добавляем многоточие */
         transition: all .4s ease-in-out;
         &:last-child {
             margin: 0;
-            text-align: left;
         }
         &:hover,
         &:focus,
         &:active {
-            transform: scale(1.0);
+            transform: scale(1.2);
             color: black;
             font-weight: 700;
         }
